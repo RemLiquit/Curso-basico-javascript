@@ -8,10 +8,22 @@ var articulos = [
   { nombre: "Audifonos", costo: 1700 },
 ];
 
-var nombreArticulos = articulos.map(function (articulo) {
-  return articulo.nombre;
+var articulosBaratos = articulos.some(function (articulo) {
+  return articulo.costo <= 700;
 });
 
-var articulosFiltrados = articulos.filter(function (articulo) {
-  return articulo.costo <= 500;
+articulos.forEach(function (articulo) {
+  console.log(articulo.nombre);
 });
+
+// var encuentraArticulo = articulos.find(function (articulo) {
+//   return articulo.nombre === "Laptop";
+// });
+
+// var nombreArticulos = articulos.map(function (articulo) {
+//   return articulo.nombre;
+// });
+
+// var articulosFiltrados = articulos.filter(function (articulo) {
+//   return articulo.costo <= 500;
+// });
