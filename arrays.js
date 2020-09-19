@@ -8,13 +8,21 @@ var articulos = [
   { nombre: "Audifonos", costo: 1700 },
 ];
 
-var articulosBaratos = articulos.some(function (articulo) {
-  return articulo.costo <= 700;
-});
+// articulos.push({ nombre: "Pantalla", costo: 2200 });
 
-articulos.forEach(function (articulo) {
-  console.log(articulo.nombre);
-});
+// Eliminar el primero objeto
+// articulos.shift();
+
+// Eliminar el ultimo objeto
+// articulos.pop();
+
+// var articulosBaratos = articulos.some(function (articulo) {
+//   return articulo.costo <= 700;
+// });
+
+// articulos.forEach(function (articulo) {
+//   console.log(articulo.nombre);
+// });
 
 // var encuentraArticulo = articulos.find(function (articulo) {
 //   return articulo.nombre === "Laptop";
